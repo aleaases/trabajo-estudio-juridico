@@ -1,0 +1,88 @@
+/* herramientas de la pagina y colores */
+:root {
+    --main-rojo: #B23A48;
+    --main-naranja: #EDAE49;
+    --main-amarillo: #F9DF74;
+    --main-crema: #F9EDCC;
+    --main-violetaoscuro: #2B061E;
+    --main-cianclaro: #D1FAFF;
+    --main-azulclaro: #9BD1E5;
+    --main-azulsombra: #6A8EAE;
+    --main-verdecrayola: #57A773;
+    --main-verdeoscuro: #157145;
+    --main-white: #fefefe;
+    --main-gray: #303841;
+    --main-grey: #808080;
+    --main-plata: #BEBEBE;
+    --main-aluminio:  #B9B8B5;
+    --main-blue: #45567d;
+    --main-negro: #000000;
+}
+
+
+
+/* comando general de la pagina */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+/* barra de inicio */
+#barra-inicio {
+    background-color: var(--main-naranja);
+}
+
+/* seccion de presentacion */
+
+#presentacion {
+    background-image: url(../../img/estudio-juridico-bustamante-uruguay.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.estilo {
+    color: var(--main-white);
+    font-weight: 500;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.estilo1 {
+    color: var(--main-white);
+    text-align: center;
+}
+
+/* seccion de informacion */
+.seccion-info-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+
+
+
+/* seccion de galeria */
+
+.text-galeria {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--main-negro);
+}
