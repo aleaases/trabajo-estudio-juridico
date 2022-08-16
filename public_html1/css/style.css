@@ -33,15 +33,16 @@
     box-sizing: inherit;
 }
 
+.container-{breakpoint}: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
 /* barra de inicio */
-#barra-inicio {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--main-gray) !important;
-    z-index: 10;
-}
 
 .nav-link {
     color: var(--main-white) !important;
@@ -79,28 +80,51 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 50vh;
+    text-align: center;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+}
+
+.info-texts3 {
+    display: flex;
+    flex-direction: initial;
+
+}
+
+.info-texts2 {
+
+}
+
+.seccion-info-2 {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 80vh;
     text-align: center;
     background-color: var(--main-gray);
 }
 
+
 /* seccion de contacto */
 
 #form-maps {
     display: flex;
-    flex-direction: initial;
-    width: 100%;
+    width: 100;
     height: 500px;
 }
 
-#form-texts {
-    background-color: #f8ffff;
+.form-texts {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column ;
     justify-content: center;
-    gap: 30px;
-    width: 500px;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-color: var(--main-gray);
 }
 
 
