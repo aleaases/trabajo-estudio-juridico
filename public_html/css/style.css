@@ -10,13 +10,16 @@
     --main-azulsombra: #6A8EAE;
     --main-verdecrayola: #57A773;
     --main-verdeoscuro: #157145;
-    --main-white: #ecf3f5;
+    --main-white: #fefefe;
     --main-gray: #303841;
     --main-grey: #808080;
     --main-plata: #BEBEBE;
     --main-aluminio:  #B9B8B5;
     --main-blue: #45567d;
+    --main-negro: #000000;
 }
+
+
 
 /* comando general de la pagina */
 * {
@@ -30,132 +33,48 @@
     box-sizing: inherit;
 }
 
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-@media (max-width: 75em) {
-    html {
-        font-size: 60%;
-    }
-}
-
-@media (max-width: 61.25em) {
-    html {
-    font-size: 58%;
-    }
-}
-
-@media (max-width: 28.75em) {
-    html {
-    font-size: 55%;
-    }
-}
-
-/* cuerpo de la pagina */
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.8;
-    color: rgb(61, 66, 74);
-}
+.container-{breakpoint}: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
 
 /* barra de inicio */
-.barra-menu {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--main-naranja);
-    box-shadow: 0 2px 0 #BEBEBE;
-    z-index: 10;
-    line-height: 1px;
-}
 
-#barrainicio {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--main-naranja);
-    box-shadow: 0 2px 0 #BEBEBE;
-    z-index: 10;
-    line-height: 1px;
-}
-
-@media (max-width: 28.75em) {
-.inicio {
-    justify-content: center;
-}
-
-.letrasnegritas {
-    margin: 0 1 rem;
-    color: var(--main-violetaoscuro);
-}
-}
-
-.letrasnegritas {
-    display: flex;
-    margin-right: 2rem;
-}
-
-.letrasnegritas a {
-    display: block;
-    font-size: 2.2rem;
-    padding: 1rem;
-    color: var(--main-violetaoscuro);
-    text-decoration: none;
-}
-
-.letrasnegritas a:hover {
-    background: var(--main-grey);
-}
-
-a {
-    text-decoration: none;
-    color: var(--main-white);
+.nav-link {
+    color: var(--main-white) !important;
 }
 
 /* seccion de presentacion */
 
 #presentacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(174, 201, 207);
     background-image: url(../../img/estudio-juridico-bustamante-uruguay.jpg);
     background-size: cover;
-    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .estilo {
-    font-family: 'Lobster', cursive;
     color: var(--main-white);
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
-    font-size: 8rem;
-    
+    font-size: 5rem;
 }
 
 .estilo1 {
-    font-family: 'The Nautigal', cursive;
     color: var(--main-white);
-    font-size: 8rem;
+    text-align: center;
 }
-/* seccion de informacion */
 
-#cuerpo {
+/* seccion de informacion */
+.seccion-info-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,26 +82,62 @@ a {
     width: 100%;
     height: 50vh;
     text-align: center;
-    background-color: #BEBEBE;
-}
-
-.estilo2 a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 6rem;
-    color: #3d424a;
+    background-color: var(--main-gray);
+    color: var(--main-white);
 
 }
 
-/* seccion de contacto */
-
-#interfas {
+.info-texts3 {
     display: flex;
-    flex-direction: column;
+    flex-direction: initial;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.info-texts2 {
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+.seccion-info-2 {
+    display: flex;
+    flex-direction: column ;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 25vh;
+    height: 80vh;
     text-align: center;
-    background-color: #BEBEBE
+    background-color: var(--main-gray);
+}
+
+
+/* seccion de contacto */
+
+#form-maps {
+    display: flex;
+    width: 100;
+    height: 500px;
+}
+
+.form-texts {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-color: var(--main-gray);
+}
+
+
+
+.maps-form {
+    width: 50%;
+    display: flex;
+    width: 1000px;
+    height: 500px;
 }
 

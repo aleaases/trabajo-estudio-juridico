@@ -4,66 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio juridico</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+    <title>Estudio juridico cassett</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <header class="barra-menu">
-        <nav id="barrainicio" class="inicio">
-            <ul id="letras" class="letrasnegritas" style="list-style: none;">
-                <li>
-                    <a href="index.html">inicio</a>
-                </li>
-                <li>
-                    <a href="info.html">informacion</a>
-                </li>
-                <li>
-                    <a href="contacto.html">contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-{breakpoint}">
+        <!-- barra de inicio -->
+        <div id="barra-menu">
+            <nav id="barra-inicio" class="navbar navbar-dark bg-dark justify-content-end">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#barra-inicio">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-info">informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto-form">contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <!-- imagen de presentacion -->
+        <div id="presentacion" class="PRESENTACION">
+            <H1 class="estilo">ESTUDIO JURIDICO</H1>
+            <h2 class="estilo1">DR. Juan Carlos Casette y Asociadas</h2>
+        </div>
+    
+    <!-- informacio del estudio -->
+        <div class="seccion-info-1" id="contenedor-info">
+            <h4 class="info-texts2">nuestra mision</h4>
+            <p class="info-texts3">
+                    Somos abogados con más de 20 años en el ejercicio profesional, con vasta experiencia en distintas ramas del derecho. 
+                    <br>
+                    Basamos nuestra labor en la confianza, la transparencia y la honestidad, siguiendo los mayores estándares de ética profesional. 
+                    <br>
+                    Brindamos servicios jurídicos integrales, con base en la calidad y eficiencia, orientados hacia la satisfacción de nuestros clientes mediante el asesoramiento legal de excelencia.
+                    <br>
+                    Nos especializamos en derecho laboral, derecho penal, derecho familia. administrativo, civil y comercial. Contamos con un equipo de trabajo especializado
+                    <br>
+                    Caracterizan nuestra labor el trabajo en equipo, el compromiso y la responsabilidad asumida con ahínco personal,<br>
+                    la honestidad y la transparencia, y brindar soluciones agiles y concretas con proyecciones reales y sinceras.
+                </p> 
+        </div>
 
-    <div id="presentacion" class="PRESENTACION">
-        <H1 class="estilo">ESTUDIO JURIDICO</H1>
-        <h2 class="estilo1">Juan Carlos Casette y Asociadas</h2>
-    </div>
+        <div id="seccion-info" class="seccion-info-2">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Penal</h5>
+                            <p class="card-text">Asesoramiento jurídico Integral. Defensas penales. Patrocinio de querellas. Violencia de género. Jurisdicción Federal y Ordinaria en Capital y Provincia de Buenos Aires. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Civil</h5>
+                            <p class="card-text">Derecho de responsabilidad civil por daños. Accidentes de tránsito. Mala praxis. Derechos personales. Sucesiones. Defensa al consumidor. Derechos Reales. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Laboral</h5>
+                            <p class="card-text">Asesoramiento a empresas y particulares. Registración Laboral. Despidos. Empleo en negro. Accidentes de trabajo. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Familiar</h5>
+                            <p class="card-text">Resolución de conflictos en la relaciones  familiares. Divorcio. Cuidado Personal de los hijos. Alimentos. Violencia Familiar y de Género.  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Comercial</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div id="cuerpo" class="cuerpoclass">
-        <div>
-            <h3 class="estilo2"><a href="info.html">informacion</a> </h3>
-            <p class="estilo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ad. Blanditiis, sequi deserunt fugit optio exercitationem possimus, aperiam dicta ad illum sed aliquid repudiandae reiciendis consequatur, sunt error! Nemo, ut?</p>
+        <div class="form-texts">
+
+        </div>
+    
+    <!-- formulario de contacto -->
+        <div class="form-maps" >
+            <iframe src="https://www.google.com/maps/d/embed?mid=1oe9fNlB1pShag8BiL3-VbZ3ktMakyyE&ehbc=2E312F" width="100%" height="100%" style="height: 500px;"></iframe>
         </div>
     </div>
-
-    <div id="interfas" class="interfasclass">
-        <div class="estilo4">
-            <h3>contacto</h3>
-        </div>
-        <div class="estilointerfas">
-            <a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
-    <a id="profile-link" href= target="_blank" class="btn contact-details"><i class="fab insta"></i> Instagram</a>
-    <a href="" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
-    <a href="mailto:@example.com" class="btn contact-details"><i class="fas fa-at"></i> Email</a>
-    <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Telefono</a>
-        </div>
-    </div>
-    <footer>
-        <p>
-            **....
-        </p>
-        <p>
-            &copy; Created for
-        <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
-    </p>
-    </footer>
-
+    
 </body>
 </html>
